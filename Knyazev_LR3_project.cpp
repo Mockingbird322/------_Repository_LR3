@@ -1,4 +1,6 @@
 #include <iostream>
+#include <cmath>      // Для функций floor и round
+#include <iomanip>    // Для управления выводом 
 using namespace std;
 
 // Объявления функций
@@ -50,8 +52,9 @@ int main() {
 
 // Определения функций (пока пустые)
 void enterRealNumber() {
-    // Реализация будет добавлена позже
-    cout << "[Функция ввода x]\n";
+    cout << "Введите вещественное число x: ";
+    cin >> x;
+    cout << "Сохранено: x = " << x << endl;
 }
 
 void enterNaturalNumber() {
