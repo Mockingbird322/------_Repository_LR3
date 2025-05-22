@@ -69,8 +69,10 @@ void enterNaturalNumber() {
 }
 
 void roundX() {
-    // Реализация будет добавлена позже
-    cout << "[Функция округления x до y знаков]\n";
+    double factor = pow(10, y);
+    double rounded = round(x * factor) / factor;
+    cout << fixed << setprecision(y);
+    cout << "x, округлённый до " << y << " знаков после запятой: " << rounded << endl;
 }
 
 void discardIntegerPart() {
